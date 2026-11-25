@@ -1,0 +1,129 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comité de direction : financer l'IA sinistres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bleu:#1D9BF0;--vert:#008000;--rouge:#FF0000;--noir:#0A0A0A;--blanc:#F5F5F5}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--blanc);color:var(--noir);font-family:"Plus Jakarta Sans",system-ui,sans-serif;overflow:hidden}
+main{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory;scroll-behavior:smooth}
+section{position:relative;height:100vh;scroll-snap-align:start;padding:5vh 5vw 7vh;display:flex;flex-direction:column}
+h2{font-size:3.9vw;font-weight:600;text-align:center;line-height:1.1;margin-bottom:5vh}
+.num{position:fixed;right:2vw;bottom:2vh;font-size:.94vw;font-weight:300}
+.det{font-size:.94vw;font-weight:300}
+.txt{font-size:1.1vw;font-weight:400}
+.cle{font-size:2.35vw;font-weight:500}
+.card{background:#fff;border:1px solid rgba(10,10,10,.14);border-radius:20px;padding:2.4vw}
+.plein{background:var(--noir);color:#fff;border-radius:20px;padding:2.4vw}
+.plein.b{background:var(--bleu)} .plein.v{background:var(--vert)} .plein.r{background:var(--rouge)}
+.lab{font-size:.94vw;font-weight:500;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.big{font-size:5.2vw;font-weight:500;line-height:1;margin:1.4vw 0 .8vw}
+.row{display:grid;gap:2vw;flex:1;align-items:center;align-content:center}
+.cover{background:var(--noir);color:#fff;align-items:center;justify-content:center;text-align:center;gap:2.4vh}
+.cover h1{font-size:5vw;font-weight:600;line-height:1.08;max-width:80vw}
+.cover .res{color:var(--bleu);font-size:1vw;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-top:6vh}
+.cover .aut{color:#bbb;font-size:1vw;font-weight:300}
+.fin{background:var(--noir);color:#fff;align-items:center;justify-content:center}
+.fin h1{font-size:6vw;font-weight:600}
+.notes{position:fixed;left:2vw;right:2vw;bottom:5vh;background:#fff;border:1px solid rgba(10,10,10,.2);border-radius:20px;padding:1.6vw;font-size:1.3vw;line-height:1.5;display:none;z-index:9;box-shadow:0 4px 14px rgba(0,0,0,.16)}
+.notes.on{display:block}
+.eq{font-size:2.1vw;font-weight:500;line-height:1.35}
+.pill{display:inline-block;border:2px solid var(--noir);border-radius:999px;padding:.5vw 1.3vw;font-size:1.3vw;font-weight:500;margin:0 .6vw .6vw 0}
+@media print{main{height:auto;overflow:visible}section{page-break-after:always}.notes,.num{display:none!important}}
+</style></head><body>
+
+<main id="main"><section class="cover" id="s1">
+ <div class="det" style="position:absolute;top:4vh;right:3vw;background:rgba(255,255,255,.92);color:#0A0A0A;padding:.9vw 1.4vw;border-radius:20px;font-weight:500">IUT de Roubaix</div>
+ <h1>Faut-il financer l'assistant IA du service Sinistres ?</h1>
+ <div class="txt" style="color:#ddd">Comité de direction, groupe 3</div>
+ <div class="res">R5.MDEE.14 Business model 2, M. Ryckebusch</div>
+ <div class="aut">Romane Da Silva, Yoan Bailleul &amp; Sofian Chtioui, BUT 3 TC MDEE, IUT de Roubaix, 25/11/2026</div>
+</section>
+
+<section id="s2"><h2>Les hypothèses du groupe 3</h2>
+ <div class="row" style="grid-template-columns:repeat(3,1fr);align-items:center">
+  <div class="plein"><div class="lab">Investissement</div><div class="big">40 000 €</div><div class="txt">Dépense initiale</div></div>
+  <div class="plein r"><div class="lab">Charges</div><div class="big">15 000 €</div><div class="txt">Par an</div></div>
+  <div class="plein v"><div class="lab">Gains</div><div class="big">50 000 €</div><div class="txt">Par an</div></div>
+ </div>
+</section>
+
+<section id="s3"><h2>Les calculs</h2>
+ <div class="row" style="grid-template-columns:1fr 1fr;grid-auto-rows:1fr">
+  <div class="card"><div class="lab">Flux net annuel</div><div class="eq" style="margin-top:1vw">50 000 − 15 000</div><div class="big" style="color:var(--vert)">35 000 €</div></div>
+  <div class="card"><div class="lab">Gain net année 1</div><div class="eq" style="margin-top:1vw">35 000 − 40 000</div><div class="big" style="color:var(--rouge)">−5 000 €</div></div>
+  <div class="card"><div class="lab">ROI année 1</div><div class="eq" style="margin-top:1vw">−5 000 / 40 000 × 100</div><div class="big" style="color:var(--rouge)">−12,5 %</div></div>
+  <div class="card"><div class="lab">Payback</div><div class="eq" style="margin-top:1vw">40 000 / 35 000 × 12</div><div class="big">13,7 mois</div></div>
+ </div>
+ <div class="det" style="margin-top:2vh">Source : Ryckebusch, support de la séance 2, Business model 2, (consulté le 25/11/2026)</div>
+</section>
+
+<section id="s4"><h2>La mise est récupérée au mois 14</h2>
+ <div style="flex:1;display:flex;align-items:center;justify-content:center">
+ <svg viewBox="0 0 900 400" style="width:80vw;max-height:68vh">
+  <rect x="60" y="20" width="800" height="150" fill="#008000" opacity=".1"/><rect x="60" y="170" width="800" height="200" fill="#FF0000" opacity=".1"/>
+  <line x1="60" y1="170" x2="860" y2="170" stroke="#0A0A0A" stroke-width="2"/>
+  <polyline points="60,340 860,42.5" fill="none" stroke="#0A0A0A" stroke-width="5"/>
+  <circle cx="60" cy="340" r="9" fill="#FF0000"/><circle cx="517" cy="170" r="11" fill="#1D9BF0"/><circle cx="860" cy="42.5" r="9" fill="#008000"/>
+  <text x="85" y="362" font-size="24" fill="#FF0000" font-weight="500">−40 k€</text>
+  <text x="545" y="205" font-size="24" fill="#1D9BF0" font-weight="500">Payback 13,7 mois</text>
+  <text x="745" y="32" font-size="24" fill="#008000" font-weight="500">+30 k€</text>
+  <text x="52" y="395" font-size="18" fill="#0A0A0A">0</text><text x="432" y="395" font-size="18">12 mois</text><text x="810" y="395" font-size="18">24 mois</text>
+ </svg></div>
+ <div class="det">Flux cumulés du projet, en k€. Hypothèse : flux nets réguliers de 2 917 €/mois</div>
+</section>
+
+<section id="s5"><h2>Trois briques du Canvas impactées</h2>
+ <div class="row" style="grid-template-columns:repeat(3,1fr)">
+  <div class="plein b"><div class="lab">Proposition de valeur</div><div class="cle" style="margin-top:1.4vw">Sinistre traité plus vite</div><div class="txt" style="margin-top:1.2vw">Réponse client rapide<br>Dossier suivi en continu</div></div>
+  <div class="plein"><div class="lab">Activités clés</div><div class="cle" style="margin-top:1.4vw">Tri et instruction automatisés</div><div class="txt" style="margin-top:1.2vw">Pré-analyse des dossiers<br>Experts sur les cas complexes</div></div>
+  <div class="plein r"><div class="lab">Structure de coûts</div><div class="cle" style="margin-top:1.4vw">40 000 € puis 15 000 € par an</div><div class="txt" style="margin-top:1.2vw">Intégration, licences<br>Maintenance</div></div>
+ </div>
+</section>
+
+<section id="s6"><h2>Trois KPI pour piloter</h2>
+ <div class="row" style="grid-template-columns:1fr;grid-auto-rows:1fr;align-content:center">
+  <div class="card" style="display:flex;align-items:center;gap:3vw"><div class="big" style="margin:0;color:var(--bleu);width:6vw">1</div><div><div class="cle">Délai moyen de traitement d'un sinistre</div><div class="txt">En jours, avant et après l'IA</div></div></div>
+  <div class="card" style="display:flex;align-items:center;gap:3vw"><div class="big" style="margin:0;color:var(--bleu);width:6vw">2</div><div><div class="cle">Coût de gestion par dossier</div><div class="txt">En euros, gains réellement convertis en économies</div></div></div>
+  <div class="card" style="display:flex;align-items:center;gap:3vw"><div class="big" style="margin:0;color:var(--bleu);width:6vw">3</div><div><div class="cle">Satisfaction client après sinistre</div><div class="txt">Note sur 10, taux de réclamations</div></div></div>
+ </div>
+</section>
+
+<section id="s7"><h2>Deux risques et leur maîtrise</h2>
+ <div class="row" style="grid-template-columns:1fr 1fr">
+  <div class="card"><div class="lab" style="color:var(--rouge)">Risque 1</div><div class="cle" style="margin:1vw 0">Gains surestimés</div><div class="txt">Une heure gagnée n'est pas une économie</div>
+   <div style="margin-top:2.4vw;display:flex;gap:1vw;align-items:flex-start"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#008000"/><path d="M9 17.5l5.5 5.5L25 12" stroke="#fff" stroke-width="3.4" fill="none"/></svg><div class="cle" style="font-size:1.7vw">Valoriser le temps libéré<br>Suivre les gains réels chaque mois</div></div></div>
+  <div class="card"><div class="lab" style="color:var(--rouge)">Risque 2</div><div class="cle" style="margin:1vw 0">Erreurs de l'IA sur les dossiers</div><div class="txt">Mauvaise décision, données sensibles des assurés</div>
+   <div style="margin-top:2.4vw;display:flex;gap:1vw;align-items:flex-start"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#008000"/><path d="M9 17.5l5.5 5.5L25 12" stroke="#fff" stroke-width="3.4" fill="none"/></svg><div class="cle" style="font-size:1.7vw">Validation humaine des cas sensibles<br>Audit trimestriel, conformité RGPD</div></div></div>
+ </div>
+</section>
+
+<section id="s8"><h2>Notre décision : ajuster</h2>
+ <div class="row" style="grid-template-columns:1.1fr 1fr">
+  <div class="plein"><div class="lab">Tel quel</div><div class="cle" style="margin:1.2vw 0">−5 000 € en année 1<br>Payback 13,7 mois</div><div class="txt">Non rentable la première année</div></div>
+  <div class="plein v"><div class="lab">Ajusté</div><div class="cle" style="margin:1.2vw 0">Lancement en phases, 30 000 €</div><div class="big" style="font-size:3.4vw;margin:.6vw 0">ROI 16,7 % · payback 10,3 mois</div><div class="txt">Extension après 6 mois si les KPI sont atteints</div></div>
+ </div>
+</section>
+
+<section class="fin" id="s9"><h1>Merci de votre attention</h1></section>
+
+</main><div class="num" id="num"></div>
+<div class="notes" id="notes"></div>
+<script>
+const N={
+1:"Bonjour. Nous sommes le groupe 3, le service Sinistres. Notre question : faut-il financer cet assistant IA ? On vous répond avec les calculs, le Canvas et les risques.",
+2:"Nos hypothèses : 40 000 euros d'investissement au départ, 15 000 euros de charges chaque année, et 50 000 euros de gains par an. C'est plus cher que les autres groupes, avec des gains un peu plus hauts.",
+3:"Le flux net annuel, c'est ce qu'on gagne chaque année moins les charges : 35 000 euros. Mais en année 1, on retire aussi l'investissement : on est à moins 5 000 euros. Le ROI est donc de moins 12,5 pour cent. Le payback, c'est 40 000 divisé par 35 000, fois 12 : 13,7 mois.",
+4:"Sur la courbe, on part à moins 40 000. On repasse à zéro au mois 14, et on finit à plus 30 000 euros à deux ans. Donc le projet est rentable, mais pas dès la première année.",
+5:"Trois briques du Canvas sont touchées. La proposition de valeur : un sinistre traité plus vite. Les activités clés : l'IA trie et instruit, les experts gardent les cas complexes. La structure de coûts : 40 000 au lancement, puis 15 000 par an.",
+6:"Pour piloter, trois KPI. Le délai moyen de traitement d'un sinistre. Le coût de gestion par dossier, pour vérifier que les gains deviennent de vraies économies. Et la satisfaction client après sinistre.",
+7:"Deux risques. D'abord des gains surestimés : une heure gagnée n'est pas une économie, il faut la valoriser et suivre les gains réels chaque mois. Ensuite des erreurs de l'IA : on garde une validation humaine sur les cas sensibles, avec un audit trimestriel et le respect du RGPD.",
+8:"Notre décision : ajuster. Tel quel, on perd 5 000 euros la première année. Nous proposons un lancement en phases à 30 000 euros : le ROI passe à 16,7 pour cent et le payback à 10,3 mois. On étend après six mois si les KPI sont atteints.",
+9:"Merci de votre attention. Nous sommes prêts pour vos questions."};
+const M=document.getElementById('main');const S=[...document.querySelectorAll('section')];let i=0;
+function cur(){const h=M.clientHeight;return Math.max(0,Math.min(S.length-1,Math.round(M.scrollTop/h)))}
+function upd(){i=cur();const n=document.getElementById('num');n.textContent=(i+1)+' / '+S.length;n.style.color=(i==0||i==S.length-1)?'#fff':'#0A0A0A';document.getElementById('notes').textContent=N[i+1]}
+function go(k){k=Math.max(0,Math.min(S.length-1,k));M.scrollTo({top:k*M.clientHeight,behavior:'smooth'})}
+M.addEventListener('scroll',upd);
+document.addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();go(cur()+1)}else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(cur()-1)}else if(e.key==='n'||e.key==='N'){document.getElementById('notes').classList.toggle('on')}});
+upd();
+</script></body></html>
